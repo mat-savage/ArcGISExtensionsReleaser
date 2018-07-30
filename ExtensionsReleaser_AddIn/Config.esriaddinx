@@ -1,0 +1,25 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Extension Releaser AddIn</Name>
+  <AddInID>{169635b2-e72e-4f1f-a445-c996ee8c83d5}</AddInID>
+  <Description>Extension Releaser</Description>
+  <Version>1.0.0</Version>
+  <Image>Images\ExtensionsReleaser_ArcMapAddIn.png</Image>
+  <Author></Author>
+  <Company></Company>
+  <Date>07/29/2018</Date>
+  <Targets>
+    <Target name="Desktop" version="10.3" />
+  </Targets>
+  <AddIn language="CLR4.0" library="ExtensionsReleaser_AddIn.dll" namespace="ExtensionsReleaser_AddIn">
+    <ArcMap>
+      <Extensions>
+        <Extension id="ExtensionsReleaser_ArcMapAddIn" class="ExtensionsReleaser_ArcMap" productName="ExtensionsReleaser_AddIn" autoLoad="true" />
+      </Extensions>
+    </ArcMap>
+    <ArcCatalog>
+      <Extensions>
+        <Extension id="ExtensionsReleaser_ArcCatalogAddIn" class="ExtensionsReleaser_ArcCatalog" productName="ExtensionsReleaser_AddIn" autoLoad="true" />
+      </Extensions>
+    </ArcCatalog>
+  </AddIn>
+</ESRI.Configuration>
